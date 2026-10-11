@@ -1,5 +1,7 @@
 # RECLAIM — Zankalon: where should an agricultural adviser investigate first?
 
+**Team:** Mohammed Altemmemi, Fatema Alsabahe, Anfal Benourkhou, Jana Abdou (United Arab Emirates) · **Theme:** early detection of agricultural land degradation.
+
 **One line:** a transparent, rules-based screening of a 4.7 × 4.4 km pilot rectangle at Zankalon (Sharqiya, Egypt) that compares Sentinel-2 vegetation indices month-by-month between 2023 and 2024 and produces a map plus a shortlist of 98 locations (out of 1,519 eligible 100 m cells) where greenness is clearly lower, so field visits can be prioritised.
 
 **Live dashboard (no install):** https://fatema-700.github.io/Reclaim-The-arab-youth-hackathon/ — the Zankalon screening map, cell evidence and shortlist, served as static files from this repository's `gh-pages` branch.
@@ -82,9 +84,9 @@ The same result in the live dashboard (https://fatema-700.github.io/Reclaim-The-
 **Limitations (also shown in the dashboard):** 100 m cells are not farm boundaries and can cross fields; no ownership data; flags are places to investigate, not confirmed degradation; no accuracy percentage was measured; no yield-loss, cost or return estimate; two years do not establish a long-term trend; the crop mask is a static 2021 reference; crop rotation, harvest timing and weather can move the indices. The Tanager figure is a method demonstration on a scene outside Zankalon and its correlation coefficient is not an accuracy score. March 2024 has low coverage (43 % of cells retained) because of clouds.
 
 ## 9. Team, licence and attribution
-* Team: TODO (names, roles, country, theme).
+* Team (United Arab Emirates): Mohammed Altemmemi, Fatema Alsabahe, Anfal Benourkhou, Jana Abdou. Theme: early detection of agricultural land degradation using satellite and environmental data.
 * Code: MIT (see `LICENSE`). Data: see the attribution column in section 3; Sentinel-2 — Contains modified Copernicus Sentinel data; WorldCover — © ESA WorldCover project 2021; Tanager — © 2025 Planet Labs PBC, CC BY 4.0, adapted.
-* Overview video: TODO (2–3 min).
+* Overview video: coming soon (2–3 min).
 
 ## Repository layout
 ```
