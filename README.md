@@ -4,9 +4,9 @@
 
 **One line:** a transparent, rules-based screening of a 4.7 × 4.4 km pilot rectangle at Zankalon (Sharqiya, Egypt) that compares Sentinel-2 vegetation indices month-by-month between 2023 and 2024 and produces a map plus a shortlist of 98 locations (out of 1,519 eligible 100 m cells) where greenness is clearly lower, so field visits can be prioritised.
 
-**Live dashboard (no install):** https://fatema-700.github.io/Reclaim-The-arab-youth-hackathon/ — the Zankalon screening map, cell evidence and shortlist, served as static files from this repository's `gh-pages` branch.
+**Live dashboard (no install):** https://mohammed2008H.github.io/Reclaim-Front-End-/ — the Zankalon screening map, cell evidence and shortlist, served as static files from this repository's `gh-pages` branch.
 
-[![Open 04 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fatema-700/Reclaim-The-arab-youth-hackathon/blob/main/notebooks/04_Zankalon_Screening.ipynb)
+[![Open 04 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammed2008H/Reclaim-Front-End-/blob/main/notebooks/04_Zankalon_Screening.ipynb)
 
 ## 1. Business use case
 Agricultural advisers, cooperatives and land-reclamation programmes cannot visit every field. They need a cheap, repeatable way to decide **where to look first**. RECLAIM turns free satellite data into an evidence-backed "visit first" list with a plain-language reason for every entry. It does **not** diagnose the cause, estimate yield loss or claim financial savings — those require field verification.
@@ -39,8 +39,8 @@ Full file-by-file description for integrators: [`docs/BACKEND_FOR_FRONTEND.md`](
 ## 5. Installation
 Python 3.10 or newer (verified with 3.10 locally and 3.12 on Google Colab).
 ```bash
-git clone https://github.com/fatema-700/Reclaim-The-arab-youth-hackathon.git
-cd Reclaim-The-arab-youth-hackathon
+git clone https://github.com/mohammed2008H/Reclaim-Front-End-.git
+cd Reclaim-Front-End-
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
@@ -72,7 +72,7 @@ Writes `results/explorer/`. Both notebooks are committed **with their outputs** 
 
 ![screening map](results/screening_map.png)
 
-The same result in the live dashboard (https://fatema-700.github.io/Reclaim-The-arab-youth-hackathon/): click any square for its status, reason, matched months and 2023-vs-2024 monthly charts of all four indices; the 98-cell shortlist is downloadable as CSV.
+The same result in the live dashboard (https://mohammed2008H.github.io/Reclaim-Front-End-/): click any square for its status, reason, matched months and 2023-vs-2024 monthly charts of all four indices; the 98-cell shortlist is downloadable as CSV.
 
 ![dashboard, selected square](docs/testing/evidence/T12_selector_cell_detail.png)
 
@@ -101,5 +101,5 @@ src/enmap_extension.py         # optional EnMAP evidence (only with a supplied, 
 results/                       # example output of notebook 04 (+ results/explorer/ from 02)
 docs/BACKEND_FOR_FRONTEND.md   # what each output file means and how the dashboard uses it
 docs/testing/                  # testing criteria (docx + md), executed test record, evidence screenshots
-gh-pages branch                # the built dashboard served at https://fatema-700.github.io/Reclaim-The-arab-youth-hackathon/
+gh-pages branch                # the built dashboard served at https://mohammed2008H.github.io/Reclaim-Front-End-/
 ```
