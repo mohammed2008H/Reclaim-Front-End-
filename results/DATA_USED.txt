@@ -1,0 +1,12 @@
+DATA USED IN THIS RUN
+
+Sentinel-2A/B: multispectral L2A; January 2023 through December 2024.
+ESA WorldCover: 2021 land-cover reference, class 40 for cropland.
+Availability search: 2016–2025 catalogue metadata only.
+No machine-learning model was trained.
+
+EnMAP: no hyperspectral measurements analysed in this run.
+Status: not_available
+
+BUSINESS OUTPUT
+The map and shortlist help advisers select locations for field checks. Flags are not verified degradation. Profit, savings, cause and rehabilitation benefit have not been measured.

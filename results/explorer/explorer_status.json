@@ -1,0 +1,136 @@
+{
+  "aoi_bbox_wgs84": [
+    31.41,
+    30.56,
+    31.46,
+    30.6
+  ],
+  "aoi_note": "Zankalon pilot rectangle; not an official farm or irrigation boundary",
+  "sentinel2": {
+    "catalog": "https://earth-search.aws.element84.com/v1",
+    "collection": "sentinel-2-c1-l2a",
+    "year": 2024,
+    "scenes_found": 59,
+    "months_with_scene": 12,
+    "displayed": [
+      {
+        "month": "2024-02",
+        "shown": true,
+        "scene": "S2A_T36RUU_20240217T083256_L2A",
+        "acquired_utc": "2024-02-17",
+        "tile_cloud_%": 5.566329,
+        "image_pixels": 218700,
+        "clear_fraction": 0.987,
+        "median_ndvi_clear": 0.819,
+        "rejected_scenes": [],
+        "figure": "results/explorer/sentinel2_2024-02.png"
+      },
+      {
+        "month": "2024-07",
+        "shown": true,
+        "scene": "S2A_T36RUU_20240716T083926_L2A",
+        "acquired_utc": "2024-07-16",
+        "tile_cloud_%": 0.001257,
+        "image_pixels": 218700,
+        "clear_fraction": 0.993,
+        "median_ndvi_clear": 0.74,
+        "rejected_scenes": [],
+        "figure": "results/explorer/sentinel2_2024-07.png"
+      }
+    ]
+  },
+  "tanager": {
+    "catalog": "https://www.planet.com/data/stac/tanager-core-imagery/catalog.json",
+    "collections_read": 9,
+    "zankalon_covered_by_open_sample": false,
+    "collections": [
+      {
+        "collection": "natural-lands",
+        "scenes": 72,
+        "nearest_scene_distance_deg": 3.5,
+        "covers_zankalon": false,
+        "captured": "2024-09-25 to 2025-09-29"
+      },
+      {
+        "collection": "coastal-water-bodies",
+        "scenes": 43,
+        "nearest_scene_distance_deg": 3.5,
+        "covers_zankalon": false,
+        "captured": "2025-02-23 to 2025-10-29"
+      },
+      {
+        "collection": "agriculture",
+        "scenes": 44,
+        "nearest_scene_distance_deg": 6.98,
+        "covers_zankalon": false,
+        "captured": "2025-01-14 to 2025-09-29"
+      },
+      {
+        "collection": "GHG-plumes",
+        "scenes": 8,
+        "nearest_scene_distance_deg": 9.85,
+        "covers_zankalon": false,
+        "captured": "2024-10-04 to 2025-07-03"
+      },
+      {
+        "collection": "urban",
+        "scenes": 58,
+        "nearest_scene_distance_deg": 12.85,
+        "covers_zankalon": false,
+        "captured": "2024-10-25 to 2025-10-29"
+      },
+      {
+        "collection": "energy-mining",
+        "scenes": 17,
+        "nearest_scene_distance_deg": 19.42,
+        "covers_zankalon": false,
+        "captured": "2024-09-25 to 2025-09-11"
+      },
+      {
+        "collection": "snow-ice",
+        "scenes": 7,
+        "nearest_scene_distance_deg": 62.87,
+        "covers_zankalon": false,
+        "captured": "2025-04-11 to 2025-06-06"
+      },
+      {
+        "collection": "ROCX2025",
+        "scenes": 16,
+        "nearest_scene_distance_deg": 109.43,
+        "covers_zankalon": false,
+        "captured": "2025-07-04 to 2025-10-29"
+      },
+      {
+        "collection": "fire",
+        "scenes": 11,
+        "nearest_scene_distance_deg": 143.46,
+        "covers_zankalon": false,
+        "captured": "2024-12-15 to 2025-09-20"
+      }
+    ],
+    "analysis": {
+      "scene_id": "20250608_091605_90_4001",
+      "acquired": "2025-06-08",
+      "is_zankalon": false,
+      "n_bands": 426,
+      "n_usable_bands": 368,
+      "quality_masks_applied": [
+        "beta_cloud_mask",
+        "beta_cirrus_mask",
+        "nodata_pixels"
+      ],
+      "valid_pixels": 359001,
+      "valid_fraction": 0.687,
+      "vegetated_pixels": 47976,
+      "bare_pixels": 180240,
+      "red_edge_median_nm": 733.4749755859375,
+      "s2_ndre_vs_red_edge_pearson_r": 0.564,
+      "pearson_r_meaning": "agreement between two descriptive indicators on one demonstration scene; not an accuracy or validation score",
+      "figure": "results/explorer/hyperspectral_demo.png",
+      "attribution": "Tanager STAC Data, available at www.planet.com/data/stac (c) 2025 Planet Labs PBC. All Rights Reserved. Adapted from the original (CC BY 4.0).",
+      "label": "Method demonstration on a scene outside Zankalon"
+    }
+  },
+  "run_utc": "2026-10-10T16:38:03+00:00",
+  "note": "Exploration notebook. The Sentinel-2 screening result is produced by notebook 04 and is not changed here. A Tanager panel is Zankalon evidence only when analysis.is_zankalon is true."
+}

@@ -1,0 +1,147 @@
+{
+ "environment": {
+  "browser": "Chrome 137 (Devin VM, Linux)",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "note": "software WebGL on this VM (no GPU): the globe renders at ~1-3 fps here, so camera flights are slow; a laptop GPU is far faster"
+ },
+ "results": [
+  {
+   "id": "T17",
+   "check": "dashboard usable within 5 s (5 openings; max 9.03 s)",
+   "status": "FAIL",
+   "note": "8.88 8.68 9.03 8.60 8.84"
+  },
+  {
+   "id": "T12",
+   "check": "selector lists 1,780 unique cells = summary CSV ids",
+   "status": "PASS",
+   "note": "1780"
+  },
+  {
+   "id": "T12",
+   "check": "20 selector picks: id, category, explanation, months, crop pixels, centre (UTM to the metre, lat/lon within 1 m)",
+   "status": "PASS",
+   "note": "[]"
+  },
+  {
+   "id": "T17",
+   "check": "20 cell selections: details + 4 charts updated within 1 s (max 14 ms, measured in-page; the camera flight is a separate animation)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "T12",
+   "check": "20 map clicks: clicked square = hovered id = panel id with correct category",
+   "status": "PASS",
+   "note": "[]"
+  },
+  {
+   "id": "T12",
+   "check": "cell ring \u2248 100 m (101.4 \u00d7 101.1 m), camera north-up after fly",
+   "status": "PASS",
+   "note": "heading=0.0"
+  },
+  {
+   "id": "T13",
+   "check": "10 cells: every plotted point = source value (3 dp), rejected months drawn as gaps not zero, panel medians = summary (3 dp) = independent median from the 4-dp pair table",
+   "status": "PASS",
+   "note": "[]"
+  },
+  {
+   "id": "T19",
+   "check": "EnMAP shown as not available (no completed hyperspectral input); Sentinel-only result stated",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "T19",
+   "check": "Tanager scene labelled method demonstration, outside Zankalon (scene id + date shown), not an accuracy score",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "T20",
+   "check": "sources, dates, settings and all 4 input SHA-256 checksums visible",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "T20",
+   "check": "flags need field investigation; no accuracy/yield/confirmed-degradation claims",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "T14",
+   "check": "legend counts = provenance counts; shortlist 98 rows in CSV order",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "T14",
+   "check": "shortlist CSV download served and identical to notebook file",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "T14",
+   "check": "offline (all external hosts blocked): app loads, cell selection, charts and method details work; base map tiles absent",
+   "status": "PASS",
+   "note": "[]"
+  },
+  {
+   "id": "T14",
+   "check": "static files with JavaScript disabled",
+   "status": "N/A",
+   "note": "the globe app needs JavaScript; the notebook results package (START_HERE.html + CSV/GeoJSON/PNG) covers this"
+  },
+  {
+   "id": "T15",
+   "check": "1366 px Chrome: no horizontal scroll, header/toolbar/mode switch do not overlap, controls on screen, text \u2265 10 px",
+   "status": "PASS",
+   "note": "{'tb_brand': False, 'tb_mode': False, 'brand_mode': False, 'tb_readout': False, 'readout_leftcol': False, 'leftcol_rightcol': False, 'rightcol_dock': False} small=0 ctrls=True"
+  },
+  {
+   "id": "T15",
+   "check": "keyboard: select a cell via selector and shortlist row, open method details; focus visible",
+   "status": "PASS",
+   "note": "True True True vis=True True"
+  },
+  {
+   "id": "T15",
+   "check": "categories named in text (legend, cell panel, hover tip), not colour only",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "T15",
+   "check": "390 px Chrome: no horizontal scroll, header/toolbar/mode switch do not overlap, controls on screen, text \u2265 10 px",
+   "status": "PASS",
+   "note": "{'tb_brand': False, 'tb_mode': False, 'brand_mode': False, 'tb_readout': False, 'readout_leftcol': False, 'leftcol_rightcol': False, 'rightcol_dock': False} small=0 ctrls=True"
+  },
+  {
+   "id": "T15",
+   "check": "Edge browser",
+   "status": "BLOCKED",
+   "note": "Edge is not installed on this Linux test machine (Chrome only)"
+  },
+  {
+   "id": "\u2014",
+   "check": "no page errors in any run",
+   "status": "PASS",
+   "note": "[]"
+  },
+  {
+   "id": "T17",
+   "check": "dashboard opening, single tab after idle (3 openings; max 9.45 s)",
+   "status": "FAIL",
+   "note": "9.45 9.44 9.02"
+  },
+  {
+   "id": "T17",
+   "check": "dashboard opening after resetting the browser GPU process (3 openings, single tab; max 5.20 s)",
+   "status": "FAIL",
+   "note": "1.74 1.36 5.20 s. The ~9 s figures above were measured while the VM's software-rendering GPU process was saturated by the preceding test pages; the app itself (65 kB JS + 2.5 MB data) is not the bottleneck. Please time it once on a normal laptop."
+  }
+ ]
+}

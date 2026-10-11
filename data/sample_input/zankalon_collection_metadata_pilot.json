@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "bbox": [
+    31.41,
+    30.56,
+    31.46,
+    30.6
+  ],
+  "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "catalog": "https://earth-search.aws.element84.com/v1",
+  "collection": "sentinel-2-c1-l2a",
+  "candidate_tile_cloud_limit": 80,
+  "collector_version": 1,
+  "epsg": 32636,
+  "resolution_m": 20,
+  "worldcover_reference_year": 2021,
+  "minimum_observations": 2,
+  "minimum_cell_coverage": 0.5,
+  "cell_pixels": 5,
+  "run_mode": "pilot",
+  "processing_years": [
+    2023,
+    2024
+  ],
+  "created_at_utc": "2026-10-03T05:02:38.522139+00:00",
+  "grid": {
+    "shape": [
+      226,
+      244
+    ],
+    "affine_first_six": [
+      20.0,
+      0.0,
+      347500.0,
+      0.0,
+      -20.0,
+      3386360.0
+    ],
+    "resampling": "nearest"
+  },
+  "calibration": "Per-asset STAC stored_value * scale + offset, applied once before indices",
+  "negative_reflectance_policy": "excluded conservatively",
+  "sampling": "At most one acquisition per third of month; lowest tile cloud cover within each third",
+  "unit": "100 m analysis cells, not farm boundaries",
+  "ground_truth_available": false,
+  "model_trained": false,
+  "crop_reference": {
+    "source": "ESA WorldCover 2021 v200",
+    "class": 40,
+    "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30E030_Map.tif"
+  },
+  "index_formulas": {
+    "NDVI": "(B08-B04)/(B08+B04)",
+    "NDRE": "(B8A-B05)/(B8A+B05)",
+    "NDMI": "(B08-B11)/(B08+B11)",
+    "BSI": "((B11+B04)-(B08+B02))/((B11+B04)+(B08+B02))"
+  },
+  "limitations": [
+    "Single static crop reference; historical land use and rotation unverified",
+    "Sparse within-month sampling; not all archive images processed",
+    "Quality thresholds are demonstration settings, not validated thresholds",
+    "Grid cells can mix several fields; pixels and months are not independent labels",
+    "No measured degradation, soil salinity or yield outcomes",
+    "Missing values are missing observations, not evidence of degradation"
+  ],
+  "attribution": "Contains modified Copernicus Sentinel data. \u00a9 ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium"
+}

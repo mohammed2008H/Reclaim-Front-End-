@@ -1,0 +1,7 @@
+{
+  "state": "not_available",
+  "updated_utc": "2026-10-10T16:42:35.246222+00:00",
+  "hyperspectral_pixels_processed": false,
+  "collection_state": "awaiting_provider_account",
+  "explanation": "Sentinel-only result: no completed hyperspectral input supplied."
+}

@@ -1,0 +1,4 @@
+threshold_NDVI_units,cells_flagged_for_review,eligible_cells
+0.03,213,1519
+0.05,98,1519
+0.08,30,1519
