@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/Reclaim-Front-End-/assets/index-Db71lhsH.js"></script>
-  <link rel="stylesheet" crossorigin href="/Reclaim-Front-End-/assets/index-UV9jo-dE.css">
+  <script type="module" crossorigin src="/Reclaim-Front-End-/assets/index-CbW8ob-3.js"></script>
+  <link rel="stylesheet" crossorigin href="/Reclaim-Front-End-/assets/index-C4UoYYPZ.css">
 </head>
 <body>
   <!-- The globe and the round "satellite eye" lens that sits over it -->
@@ -66,15 +66,15 @@
   <!-- LEFT: step 1 and step 2 -->
   <aside class="column left" id="left">
     <section class="panel" id="panel-zk-overview" data-mode="zankalon">
-      <button class="panel-head" aria-expanded="true"><span class="step icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></span><span class="panel-title">Zankalon screening</span><span class="panel-sub">Where to investigate first</span><span class="grip" aria-hidden="true" title="Drag to move"></span><span class="chev"></span></button>
+      <button class="panel-head" aria-expanded="true"><span class="step icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></span><span class="panel-title">Zankalon screening</span><span class="qmark" tabindex="0" role="img" aria-label="About this panel: The screening result for the Zankalon pilot rectangle: every 100 m square compared between 2023 and 2024 using Sentinel-2 greenness (NDVI). Shows how many squares were checked, how many had enough good data, and how many deserve a visit. Use the legend to show or hide classes, or type a square's identifier to jump to it." data-help="The screening result for the Zankalon pilot rectangle: every 100 m square compared between 2023 and 2024 using Sentinel-2 greenness (NDVI). Shows how many squares were checked, how many had enough good data, and how many deserve a visit. Use the legend to show or hide classes, or type a square's identifier to jump to it.">?</span><span class="panel-sub">Where to investigate first</span><span class="grip" aria-hidden="true" title="Drag to move"></span><span class="chev"></span></button>
       <div class="panel-body" id="zk-overview"><p class="hint">Loading the screening result…</p></div>
     </section>
     <section class="panel collapsed" id="panel-zk-quality" data-mode="zankalon">
-      <button class="panel-head" aria-expanded="false"><span class="step icon"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 16V9M11 16V5M16 16v-6"/></svg></span><span class="panel-title">Data quality</span><span class="panel-sub">Coverage and rules</span><span class="grip" aria-hidden="true" title="Drag to move"></span><span class="chev"></span></button>
+      <button class="panel-head" aria-expanded="false"><span class="step icon"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 16V9M11 16V5M16 16v-6"/></svg></span><span class="panel-title">Data quality</span><span class="qmark" tabindex="0" role="img" aria-label="About this panel: How much usable, cloud-free data there was each month, and the rules that decided which squares and months were kept. Use it to judge how far to trust the result (cloudy months are left out, never filled in)." data-help="How much usable, cloud-free data there was each month, and the rules that decided which squares and months were kept. Use it to judge how far to trust the result (cloudy months are left out, never filled in).">?</span><span class="panel-sub">Coverage and rules</span><span class="grip" aria-hidden="true" title="Drag to move"></span><span class="chev"></span></button>
       <div class="panel-body" id="zk-quality"></div>
     </section>
     <section class="panel collapsed" id="panel-zk-sources" data-mode="zankalon">
-      <button class="panel-head" aria-expanded="false"><span class="step icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3.5 3 3.5 15 0 18M12 3c-3.5 3-3.5 15 0 18"/></svg></span><span class="panel-title">Data sources</span><span class="panel-sub">Sentinel-2, EnMAP, Tanager</span><span class="grip" aria-hidden="true" title="Drag to move"></span><span class="chev"></span></button>
+      <button class="panel-head" aria-expanded="false"><span class="step icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3.5 3 3.5 15 0 18M12 3c-3.5 3-3.5 15 0 18"/></svg></span><span class="panel-title">Data sources</span><span class="qmark" tabindex="0" role="img" aria-label="About this panel: Which satellite datasets were used — Sentinel-2 for the screening, ESA WorldCover for the cropland mask — what hyperspectral data was or was not available, and the exact run record (settings, software, input checksums)." data-help="Which satellite datasets were used — Sentinel-2 for the screening, ESA WorldCover for the cropland mask — what hyperspectral data was or was not available, and the exact run record (settings, software, input checksums).">?</span><span class="panel-sub">Sentinel-2, EnMAP, Tanager</span><span class="grip" aria-hidden="true" title="Drag to move"></span><span class="chev"></span></button>
       <div class="panel-body" id="zk-sources"></div>
     </section>
     <section class="panel" id="panel-field" data-mode="explore">
@@ -97,16 +97,20 @@
 
   <!-- RIGHT: results -->
   <aside class="column right" id="right">
+    <section class="panel collapsed" id="panel-zk-health" data-mode="zankalon">
+      <button class="panel-head" aria-expanded="false"><span class="step icon"><svg viewBox="0 0 24 24"><path d="M12 21C7 17 4 13.5 4 9.5A4.5 4.5 0 0 1 12 6a4.5 4.5 0 0 1 8 3.5c0 4-3 7.5-8 11.5z"/><path d="M8 12h2l1.5-3 2 6 1.5-3h2"/></svg></span><span class="panel-title">Field health</span><span class="qmark" tabindex="0" role="img" aria-label="About this panel: Four health checks for Zankalon — crop cover, chlorophyll, crop moisture and exposed soil — comparing 2024 with the same months of 2023. Shows the whole rectangle until you click a square; then that square is ranked against the other squares. A ranking, not a diagnosis." data-help="Four health checks for Zankalon — crop cover, chlorophyll, crop moisture and exposed soil — comparing 2024 with the same months of 2023. Shows the whole rectangle until you click a square; then that square is ranked against the other squares. A ranking, not a diagnosis.">?</span><span class="panel-sub">Whole rectangle</span><span class="grip" aria-hidden="true" title="Drag to move"></span><span class="chev"></span></button>
+      <div class="panel-body" id="zk-health"></div>
+    </section>
     <section class="panel collapsed" id="panel-zk-cell" data-mode="zankalon">
-      <button class="panel-head" aria-expanded="false"><span class="step icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span class="panel-title">Selected square</span><span class="panel-sub">Click a square on the map</span><span class="grip" aria-hidden="true" title="Drag to move"></span><span class="chev"></span></button>
+      <button class="panel-head" aria-expanded="false"><span class="step icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span class="panel-title">Square details</span><span class="qmark" tabindex="0" role="img" aria-label="About this panel: Details of the square you clicked on the map: its class, the reason it was classed that way, how many months were compared, and month-by-month charts of four vegetation signals for 2023 against 2024." data-help="Details of the square you clicked on the map: its class, the reason it was classed that way, how many months were compared, and month-by-month charts of four vegetation signals for 2023 against 2024.">?</span><span class="panel-sub">Click a square on the map</span><span class="grip" aria-hidden="true" title="Drag to move"></span><span class="chev"></span></button>
       <div class="panel-body" id="zk-cell"></div>
     </section>
     <section class="panel collapsed" id="panel-zk-shortlist" data-mode="zankalon">
-      <button class="panel-head" aria-expanded="false"><span class="step icon"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></span><span class="panel-title">Visit-first shortlist</span><span class="panel-sub">Loading…</span><span class="grip" aria-hidden="true" title="Drag to move"></span><span class="chev"></span></button>
+      <button class="panel-head" aria-expanded="false"><span class="step icon"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></span><span class="panel-title">Squares to visit first</span><span class="qmark" tabindex="0" role="img" aria-label="About this panel: The ranked list of squares where 2024 greenness was clearly lower than in 2023 — the biggest drop first. An adviser can work down this list in the field. Click a row to fly to the square; download it as CSV." data-help="The ranked list of squares where 2024 greenness was clearly lower than in 2023 — the biggest drop first. An adviser can work down this list in the field. Click a row to fly to the square; download it as CSV.">?</span><span class="panel-sub">Loading…</span><span class="grip" aria-hidden="true" title="Drag to move"></span><span class="chev"></span></button>
       <div class="panel-body" id="zk-shortlist"></div>
     </section>
     <section class="panel collapsed" id="panel-zk-limits" data-mode="zankalon">
-      <button class="panel-head" aria-expanded="false"><span class="step icon"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.3 3.9L2.6 17a2 2 0 0 0 1.7 3h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><span class="panel-title">Read before using</span><span class="panel-sub">Limitations</span><span class="grip" aria-hidden="true" title="Drag to move"></span><span class="chev"></span></button>
+      <button class="panel-head" aria-expanded="false"><span class="step icon"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.3 3.9L2.6 17a2 2 0 0 0 1.7 3h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><span class="panel-title">Read before using</span><span class="qmark" tabindex="0" role="img" aria-label="About this panel: What this tool can and cannot tell you, plus a short guide to what each panel does. Read it before acting on any flag." data-help="What this tool can and cannot tell you, plus a short guide to what each panel does. Read it before acting on any flag.">?</span><span class="panel-sub">Limitations</span><span class="grip" aria-hidden="true" title="Drag to move"></span><span class="chev"></span></button>
       <div class="panel-body" id="zk-limits"></div>
     </section>
     <section class="panel collapsed" id="panel-health" data-mode="explore">
@@ -151,7 +155,7 @@
       <ul id="search-results" class="dropdown" role="listbox" hidden></ul>
     </form>
     <button id="dock-check" class="dock-main" disabled data-mode="explore">Check my field</button>
-    <button id="dock-shortlist" class="dock-main" data-mode="zankalon">Open the visit-first shortlist</button>
+    <button id="dock-shortlist" class="dock-main" data-mode="zankalon">Squares to visit first</button>
     <div class="dock-display">
       <button id="dock-display" class="dock-btn" aria-expanded="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>Display</button>
       <div id="display-pop" class="popover" hidden>
