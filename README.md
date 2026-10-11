@@ -91,7 +91,7 @@ The same result in the live dashboard (https://dist-root-nwtoxtqg.devinapps.com)
 ## 10. Team, licence and attribution
 * Team (United Arab Emirates): Mohammed Altemmemi, Fatema Alsabahe, Anfal Benourkhou, Jana Abdou. Theme: Precision agriculture.
 * Code: MIT (see `LICENSE`). Data: see the attribution column in section 3; Sentinel-2 — Contains modified Copernicus Sentinel data; WorldCover — © ESA WorldCover project 2021; Tanager — © 2025 Planet Labs PBC, CC BY 4.0, adapted.
-* Overview video: coming soon (2–3 min).
+* Overview video: not included in this submission (optional item).
 
 ## Repository layout
 ```
