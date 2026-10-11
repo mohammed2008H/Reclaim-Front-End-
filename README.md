@@ -47,7 +47,7 @@ cd Reclaim-Front-End-
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
-Or open the notebooks in Google Colab; each installs its own pinned packages in its first cell.
+Or open the notebooks in Google Colab; each installs its own pinned packages in its first cell. Conda users: `conda env create -f environment.yml && conda activate reclaim`.
 
 **Credentials:** none. No API key, token or account is needed for the headline result; no environment variable has to be set. The optional EnMAP step (off by default) needs a free DLR account.
 
@@ -97,6 +97,7 @@ The same result in the live dashboard (https://dist-root-nwtoxtqg.devinapps.com)
 ```
 README.md                      # this file
 requirements.txt               # pinned versions (Python 3.10+)
+environment.yml                # conda alternative (same pins)
 LICENSE                        # MIT
 notebooks/
   02_Zankalon_Open_Data_Explorer.ipynb   # open-data exploration + hyperspectral method demo (with outputs)

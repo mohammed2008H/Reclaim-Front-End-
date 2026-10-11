@@ -1,0 +1,9 @@
+# Conda alternative to requirements.txt (same pinned versions). Usage: conda env create -f environment.yml && conda activate reclaim
+name: reclaim
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - -r requirements.txt
