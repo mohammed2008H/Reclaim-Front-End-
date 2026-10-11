@@ -4,7 +4,7 @@
 
 **One line:** a transparent, rules-based screening of a 4.7 × 4.4 km pilot rectangle at Zankalon (Sharqiya, Egypt) that compares Sentinel-2 vegetation indices month-by-month between 2023 and 2024 and produces a map plus a shortlist of 98 locations (out of 1,519 eligible 100 m cells) where greenness is clearly lower, so field visits can be prioritised.
 
-**Live dashboard (no install):** https://mohammed2008H.github.io/Reclaim-Front-End-/ — the Zankalon screening map, cell evidence and shortlist, served as static files from this repository's `gh-pages` branch.
+**Live dashboard (no install):** https://dist-root-nwtoxtqg.devinapps.com — the Zankalon screening map, cell evidence and shortlist (static files, no backend needed). The same build is kept in this repository's `gh-pages` branch.
 
 [![Open 04 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammed2008H/Reclaim-Front-End-/blob/main/notebooks/04_Zankalon_Screening.ipynb)
 
@@ -72,7 +72,7 @@ Writes `results/explorer/`. Both notebooks are committed **with their outputs** 
 
 ![screening map](results/screening_map.png)
 
-The same result in the live dashboard (https://mohammed2008H.github.io/Reclaim-Front-End-/): click any square for its status, reason, matched months and 2023-vs-2024 monthly charts of all four indices; the 98-cell shortlist is downloadable as CSV.
+The same result in the live dashboard (https://dist-root-nwtoxtqg.devinapps.com): click any square for its status, reason, matched months and 2023-vs-2024 monthly charts of all four indices; the 98-cell shortlist is downloadable as CSV.
 
 ![dashboard, selected square](docs/testing/evidence/T12_selector_cell_detail.png)
 
@@ -101,5 +101,5 @@ src/enmap_extension.py         # optional EnMAP evidence (only with a supplied, 
 results/                       # example output of notebook 04 (+ results/explorer/ from 02)
 docs/BACKEND_FOR_FRONTEND.md   # what each output file means and how the dashboard uses it
 docs/testing/                  # testing criteria (docx + md), executed test record, evidence screenshots
-gh-pages branch                # the built dashboard served at https://mohammed2008H.github.io/Reclaim-Front-End-/
+gh-pages branch                # the built dashboard (live copy: https://dist-root-nwtoxtqg.devinapps.com)
 ```
